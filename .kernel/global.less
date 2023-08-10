@@ -1,0 +1,69 @@
+@import './theme.less';
+@import './font.less';
+
+
+
+// Style global à toute l'application.
+* {
+    font-family: @font-family;
+    color: @font-color;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    &:not(input, textarea) {
+        user-select: none;
+    }
+
+    &::-webkit-resizer {
+        
+    }
+    
+    &::-webkit-scrollbar {
+        
+    }
+
+    &::-webkit-scrollbar-track {
+        
+    }
+
+    &::-webkit-scrollbar-corner {
+        
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        
+        &:hover {
+        
+        }
+
+        &:active {
+        
+        }
+    }    
+}
+
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: @background-color;
+}
+
+
+
+// Style responsive global à toute l'application.
+@media all and (max-width: @responsive-max-width) {
+    * {
+    
+    }
+    
+
+    
+    body {
+
+    }
+}
